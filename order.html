@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Order processing</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    var queryString = new Array();
+    $(function () {
+        
+        if (queryString.length == 0) {
+            if (window.location.search.split('?').length > 1) {
+                var params = window.location.search.split('?')[1].split('&');
+                console.log(params)
+                value = params[0].replace('name=', '')
+                values = value.split("-")
+                itemName = values.slice(0, -1).join(' ').toUpperCase();
+                document.getElementById('item_name').innerHTML = itemName;
+                itemPrice = values.slice(-1)[0]
+                document.getElementById('item_price').innerHTML = '₹'+itemPrice;
+                imgName =  values.slice(0, -1).join('-') + '.jpg'
+                document.getElementById('item_image').setAttribute('src', "images/"+imgName);
+                console.log("images/"+imgName)
+                console.log(values)
+                for (var i = 0; i < params.length; i++) {
+                    var key = params[i].split('=')[0];
+                    var value = decodeURIComponent(params[i].split('=')[1]);
+                    queryString[key] = value;
+                }
+            }
+        }
+        console.log(value)
+    });
+</script>
+
+
+
+  <body>
+    <div>
+      <h1 align="center">Order Processing </h1>
+    </div>
+
+    
+        <p>Your product details are,</p>
+                        <h3 id="item_name"></h3>
+                        <img id="item_image" class="order-item-image">
+                        <h2 id="item_price"></h2>
+    
+
+                        <br>
+                        <br>
+    <div id="ordernow">
+
+      <form action="#">
+         
+
+          <div class="form-shape">
+              <label for="name">Name</label>
+              <input type="text" name="myName" id="name" placeholder="Enter your Name">
+          </div><br>
+
+          <div class="form-shape">
+              <label for="email">Email-Id</label>
+              <input type="email" name="myEmail" id="email" placeholder="Enter your email">
+          </div><br>
+
+          <div class="form-shape">
+              <label for="pho">Phone Number</label>
+              <input type="phone" name="myPhone" id="pho" placeholder="Enter your Phone no">
+          </div><br>
+
+          <div class="form-shape">
+              <label for="address">Address</label>
+              <input type="text" address="myaddress" id="address" placeholder="Enter your Address">
+          </div>
+          <br>
+          <div id="radio">
+              Cash on delivery:
+              Yes <input type="radio" name="eligible">
+              No <input type="radio" name="eligible">
+          </div><br>
+          
+          <input type="submit" onclick="clickAlert()" value="Place order">
+          <input type="reset" value="Cancel order">
+          
+          <script>
+            function clickAlert() {
+              alert("Order placed successfully!");
+          }
+          </script>
+
+
+      </form>
+  </div>
+    
+  </body>
+

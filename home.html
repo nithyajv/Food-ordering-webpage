@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <title>Pizza World</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="wclassth=device-wclassth,initial-scale=1.0 shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/332a215f17.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+
+  </head>
+
+  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="100">
+  
+    <section>
+        
+        <!--Nav-->
+        <nav class="navbar navbar-expand-lg main-navbar bg-color main-navbar-color"
+        id="main-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="#">PIZZA WORLD</a>
+            </div>
+  
+            <button class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#myNav" aria-controls="nav" aria-expanded="false"
+            aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i></button>
+        <div class="collapse navbar-collapse"id="myNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#"class="nav-link">Menu</a>
+              </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">AboutUs</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">Review</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#"class="nav-link">ContactUs</a>
+                </li>
+                
+            </ul>
+        </div>
+        </div>
+        </nav>
+        <!--End of Nav-->
+    </section>
+    <!---Hero Section-->
+    
+    
+    <!--Product Section-->
+    <section class="product-section bg-img py-3">
+        <div class="container">
+            <div class=" row justify-content-center pb-5">
+                <div class="col-md-7 heading-section text-center">
+                    <h2 class="font-weight-bold text-color glow">
+                        Menu
+                    </h2>
+                </div>
+            </div>
+            </div>
+            <!--End of title-->
+            <div class="row">
+                <div class="col-md-3  ">
+                    <div class="product glow">
+                      <img src="images/pizza-margherita.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                     <div class="text text-center">
+                         <span class="category font-weight-bold">Pizza Margherita</span>
+                         <span class="price">Rs.299/-</span><br>
+                         <input type="submit" id="pizza-margherita-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+                        </div>
+                </div>  
+                </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/sicilian-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Sicilian Pizza</span>
+                       <span class="price">Rs.299/-</span><br>
+                       <input type="submit" id="sicilian-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/indi-tandoori-paneer.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Indi tandoori paneer</span>
+                       <span class="price">Rs.299/-</span><br>
+                        <input type="submit" id="indi-tandoori-paneer-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/BBQ-chicken-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">BBQ chicken pizza</span>
+                       <span class="price">Rs.299/-</span><br>
+                        <input type="submit" id="BBQ-chicken-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/california-style-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">California style pizza</span>
+                       <span class="price">Rs.299/-</span><br>
+                        <input type="submit" id="california-style-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/chicago-style-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Chicago style pizza</span>
+                       <span class="price">Rs.299/-</span><br>
+                        <input type="submit" id="chicago-style-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/thin-crust-hawaian-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Thin Crust Hawaian pizza</span>
+                       <span class="price">Rs.299/-</span><br>
+                        <input type="submit" id="thin-crust-hawaian-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+
+              <!----->
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/pepperoni-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Pepperoni pizza</span>
+                     <span class="price">Rs.299/-</span><br>
+                      <input type="submit" id="pepperoni-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              <!----->
+              
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/italian-sausage-pan-pizza.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Italian sausage pan pizza</span>
+                     <span class="price">Rs.299/-</span><br>
+                      <input type="submit" id="italian-sausage-pan-pizza-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              <!----->
+              
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/deluxe-veggie.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Deluxe veggie</span>
+                     <span class="price">Rs.299/-</span><br>
+                      <input type="submit" id="deluxe-veggie-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              <!----->
+              
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/diavola.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Diavola</span>
+                     <span class="price">Rs.299/-</span><br>
+                      <input type="submit" id="diavola-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              
+              <!----->
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/quattro-stagioni.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Quattro stagioni</span>
+                     <span class="price">Rs.299/-</span><br>
+                      <input type="submit" id="quattro-stagioni-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              <!----->
+              
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/nonveg-supreme.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Non-veg supreme</span>
+                     <span class="price">Rs.299/-</span><br>
+                     <input type="submit" id="nonveg-supreme-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+                 </div>
+            </div>  
+            </div>
+              
+              <!----->
+              <div class="col-md-3  ">
+                <div class="product glow">
+                  <img src="images/cheese-and-corn.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                 <div class="text text-center">
+                     <span class="category font-weight-bold">Cheese and corn</span>
+                     <span class="price">Rs.299/-</span><br>
+                     <input type="submit" id="cheese-and-corn-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                 </div>
+            </div>  
+            </div>
+              <!----->
+                
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/pepper-barbeque-and-onion.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Pepper barbeque and onion</span>
+                       <span class="price">Rs.299/-</span><br>
+                       <input type="submit" id="pepper-barbeque-and-onion-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+
+                   </div>
+              </div>  
+              </div>
+                
+
+                <!----->
+                <div class="col-md-3  ">
+                  <div class="product glow">
+                    <img src="images/chicken-dominator.jpg" class="img-fluid rounded mx-auto d-block" alt="..." />
+                   <div class="text text-center">
+                       <span class="category font-weight-bold">Chicken dominator</span>
+                       <span class="price">Rs.299/-</span><br>
+                       <input type="submit" id="chicken-dominator-299" value="Order Now" class="buy-now" onclick="orderNow(this)">
+                   </div>
+              </div>  
+              </div>
+                <!----->
+
+                
+
+            </div>
+            
+        </div>
+    </section>
+    <!--End of Product Section-->
+    
+                
+    <script type="text/javascript">
+  function orderNow(element){
+    console.log(element.id)
+    var url = "order.html?name=" + encodeURIComponent(element.id);
+    console.log(url);
+    window.location.href = url;
+
+}
+</script>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>
